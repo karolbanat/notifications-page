@@ -9,8 +9,8 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/notifications-page-zGkQYSNU0Y)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/notifications-page/)
 
 ## Author
 
