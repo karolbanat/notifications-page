@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as mxn;
+
 body {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-400, 400);
@@ -9,6 +11,9 @@ main {
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
+	@include mxn.mq(medium) {
+		padding-block: 6.4rem;
+	}
 }
 
 h1,
