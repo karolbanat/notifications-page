@@ -1,0 +1,17 @@
+@keyframes scale-up-down {
+	0% {
+		scale: 1;
+	}
+
+	50% {
+		scale: 1.05;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+.scale-up-down-animation {
+	animation: scale-up-down 0.75s ease;
+}

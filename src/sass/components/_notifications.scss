@@ -24,5 +24,9 @@
 		color: var(--clr-neutral-100);
 		background-color: var(--clr-primary-400);
 		border-radius: var(--borr-200);
+
+		&[data-notifications='0'] {
+			display: none;
+		}
 	}
 }
