@@ -1,7 +1,9 @@
 @use '../abstracts/mixins' as mxn;
 
 .notifications {
-	padding-block: var(--spacer-rem-500);
+	display: grid;
+	gap: var(--spacer-rem-500);
+	padding-block: var(--spacer-rem-550);
 	padding-inline: var(--spacer-rem-475);
 	background-color: var(--clr-neutral-100);
 	@include mxn.mq(medium) {
