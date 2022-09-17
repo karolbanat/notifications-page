@@ -1,3 +1,91 @@
+@use '../abstracts/mixins' as mxn;
+
 .notification {
-  
+	--image-width: 4rem;
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacer-rem-300);
+	padding-block: var(--spacer-rem-400);
+	padding-inline: var(--spacer-rem-450);
+	font-size: var(--fz-300);
+	border-radius: var(--borr-400);
+	@include mxn.mq(medium) {
+		--image-width: 4.5rem;
+	}
+
+	&[data-status='unread'] {
+		background-color: var(--clr-neutral-200);
+	}
+
+	&[data-status='unread'] &__heading::after {
+		content: '';
+		display: inline-block;
+		margin-left: 0.6rem;
+		width: 0.8rem;
+		aspect-ratio: 1;
+		background-color: var(--clr-primary-500);
+		border-radius: 50%;
+	}
+
+	&__content {
+		display: grid;
+		gap: 1.2rem;
+		flex: 1;
+	}
+
+	&__avatar {
+		width: var(--image-width);
+		aspect-ratio: 1;
+		border-radius: 50%;
+	}
+
+	&__link {
+		font-weight: var(--fw-700);
+		text-decoration: none;
+		color: var(--notification-link, black);
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		&:hover,
+		&:focus {
+			color: var(--notification-link-hover, var(--clr-primary-400));
+		}
+
+		&--user {
+			--notification-link: var(--clr-neutral-700);
+		}
+
+		&--post {
+			--notification-link: var(--clr-neutral-600);
+		}
+
+		&--group {
+			--notification-link: var(--clr-primary-400);
+		}
+	}
+
+	&__picture-link {
+		cursor: pointer;
+
+		img {
+			min-width: var(--image-width);
+			max-width: var(--image-width);
+			aspect-ratio: 1;
+		}
+	}
+
+	&__message {
+		padding-block: var(--spacer-rem-400);
+		padding-inline: var(--spacer-rem-450);
+		color: var(--message-text, inherit);
+		background-color: var(--message-bg, transparent);
+		border: 1px solid var(--clr-neutral-300);
+		border-radius: var(--borr-100);
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			--message-bg: var(--clr-neutral-400);
+		}
+	}
 }

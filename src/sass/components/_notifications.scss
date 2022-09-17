@@ -5,7 +5,7 @@
 	padding-inline: var(--spacer-rem-475);
 	background-color: var(--clr-neutral-100);
 	@include mxn.mq(medium) {
-		border-radius: var(--borr-400);
+		border-radius: var(--borr-500);
 		box-shadow: 0 2rem 6rem hsl(225 39% 47% / 0.05);
 	}
 
