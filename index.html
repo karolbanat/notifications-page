@@ -19,32 +19,101 @@
 
 <body>
 
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
+  <main>
+    <h1 class="visually-hidden">Notifications page</h1>
+    <div class="container">
+      <section class="notifications">
+        <header class="flex-space-between">
+          <h2 class="notifications__heading">Notifications <span class="notifications__badge">3</span></h2>
+          <button class="button button--link">Mark all as read</button>
+        </header>
+        <ul class="grid">
+          <li class="notification" data-status="unread">
+            <img src="./dist/assets/images/avatar-mark-webber.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Mark Webber</a> reacted to
+                  your recent post <a href="#" class="notification__post">My first tournament today!</a></p>
+                <p class="notification__time">1<abbr aria-hidden="true">m</abbr><span
+                        class="visually-hidden">minute</span> ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="notification" data-status="unread">
+            <img src="./dist/assets/images/avatar-angela-gray.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Angela Gray</a> followed you
+                </p>
+                <p class="notification__time">5<abbr aria-hidden="true">m</abbr><span
+                        class="visually-hidden">minutes</span> ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="notification" data-status="unread">
+            <img src="./dist/assets/images/avatar-jacob-thompson.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Jacob Thompson</a> has joined
+                  your group <a href="#" class="notification__group">Chess Club</a></p>
+                <p class="notification__time">1 day ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="notification" data-status="read">
+            <img src="./dist/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Rizky Hasanuddin</a> sent you
+                  a private message </p>
+                <p class="notification__time">5 days ago</p>
+              </div>
+              <p class="notification__message">Hello, thanks for setting up the Chess Club. I've been a member for a
+                few weeks now and
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </li>
+          <li class="notification" data-status="read">
+            <img src="./dist/assets/images/avatar-kimberly-smith.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div class="flex-space-between">
+                <div>
+                  <p class="notification__heading"><a href="#" class="notification__user">Kimberly Smith</a>
+                    commented on your picture</p>
+                  <p class="notification__time">1 week ago</p>
+                </div>
+                <a aria-label="Posted picture" href="#" class="notification__picture-link"><img
+                       src="./dist/assets/images/image-chess.webp"
+                       alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="notification" data-status="read">
+            <img src="./dist/assets/images/avatar-nathan-peterson.webp" alt="" class="notification__avatar">
+            <div class="notification__content">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Nathan Peterson</a> reacted
+                  to your recent post <a href="#" class="notification__post">5 end-game strategies to increase your
+                    win rate</a></p>
+                <p class="notification__time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+          <li class="notification" data-status="read">
+            <img src="./dist/assets/images/avatar-anna-kim.webp" alt="" class="notification__avatar">
+            <div class="notification__header">
+              <div>
+                <p class="notification__heading"><a href="#" class="notification__user">Anna Kim</a> left the group
+                  <a href="#" class="notification__group">Chess Club</a>
+                </p>
+                <p class="notification__time">2 weeks ago</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
   <script src="./dist/js/main.min.js" defer></script>
 </body>
