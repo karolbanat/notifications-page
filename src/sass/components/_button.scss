@@ -1,0 +1,21 @@
+.button {
+	display: inline-block;
+	font-size: var(--fz-300);
+	font-weight: var(--fw-400);
+	text-decoration: none;
+	color: var(--button-text, black);
+	background-color: var(--button-bg, transparent);
+	border: none;
+	cursor: pointer;
+	transition: color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		color: var(--button-text-hover, black);
+	}
+
+	&--link {
+		--button-text: var(--clr-neutral-600);
+		--button-text-hover: var(--clr-primary-400);
+	}
+}
